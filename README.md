@@ -1,6 +1,6 @@
 # ECG Arrhythmia Classification Using 1D CNNs with Attention
 
-## 📌 Project Overview
+## Project Overview
 Electrocardiograms (ECGs) capture the electrical activity of the heart, and analyzing these signals allows clinicians to detect arrhythmias—abnormal heart rhythms that may indicate underlying medical conditions.
 
 This project focuses on building a deep learning pipeline for **automatic arrhythmia detection** using:
@@ -11,10 +11,10 @@ The main objective is to classify individual heartbeats into clinically relevant
 
 ---
 
-## 📁 Dataset: MIT-BIH Arrhythmia Database
+## Dataset: MIT-BIH Arrhythmia Database
 We use the **MIT-BIH Arrhythmia Database**, a widely recognized benchmark dataset in ECG research.
 
-### 🔑 Key Characteristics
+### Key Characteristics
 - **Number of Records:** 48 patient recordings (`100`, `101`, ... `234`)
 - **ECG Leads:** Two channels per record
   - **MLII** (primarily used for heartbeat annotations)
