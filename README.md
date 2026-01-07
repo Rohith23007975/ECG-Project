@@ -28,6 +28,8 @@ We use the **MIT-BIH Arrhythmia Database**, a widely recognized benchmark datase
 
 Although the dataset contains only 48 files, each recording includes thousands of annotated beats. In total, the dataset provides **~100,000 labeled heartbeats**, making it large enough for deep learning applications.
 
+REST INFO WILL FOLLOW UP 
+
 ---
 
 
