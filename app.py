@@ -37,6 +37,7 @@ ecg_class_details = {
 # ----------------------------
 # Page Configuration
 # ----------------------------
+st.markdown(" ")
 st.set_page_config(
     page_title="ECG Arrhythmia Detection",
     page_icon="🫀",
@@ -355,4 +356,5 @@ if uploaded_file is not None and analyze_button:
         st.markdown('</div>', unsafe_allow_html=True)
 
 else:
+
     ""
