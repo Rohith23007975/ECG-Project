@@ -3,9 +3,7 @@ import pandas as pd
 from Scripts.sampledep import run_ecg_inference
 import matplotlib.pyplot as plt
 
-# ----------------------------
-# ECG Class Details
-# ----------------------------
+
 ecg_class_details = {
     "N": {
         "label": "Normal Heartbeat",
@@ -32,12 +30,6 @@ ecg_class_details = {
         "color": "#F2C6A0"  # soft watercolor orange
     }
 }
-
-
-# ----------------------------
-# Page Configuration
-# ----------------------------
-st.markdown(" ")
 st.set_page_config(
     page_title="ECG Arrhythmia Detection",
     page_icon="🫀",
@@ -45,9 +37,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# ----------------------------
-# Custom CSS for Medical Minimalistic Design
-# ----------------------------
 st.markdown("""
     <style>
     /* Import Medical-friendly Font */
@@ -259,15 +248,9 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# ----------------------------
-# Header Section
-# ----------------------------
 st.markdown("# 🫀 ECG Arrhythmia Detection")
 st.markdown('<p class="subtitle">Advanced cardiac rhythm analysis powered by machine learning</p>', unsafe_allow_html=True)
 
-# ----------------------------
-# Information Box
-# ----------------------------
 st.markdown("""
     <div class="info-box">
         <strong>📋 Instructions:</strong> Upload a CSV file containing ECG signal data. 
@@ -275,9 +258,6 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# ----------------------------
-# Upload Section
-# ----------------------------
 uploaded_file = st.file_uploader(
     "Choose ECG CSV File",
     type=["csv"],
@@ -292,9 +272,6 @@ if uploaded_file is not None:
 else:
     analyze_button = False
 
-# ----------------------------
-# Analysis and Results
-# ----------------------------
 if uploaded_file is not None and analyze_button:
     with st.spinner("🔬 Analyzing ECG signal..."):
         result = run_ecg_inference(uploaded_file)
@@ -358,3 +335,4 @@ if uploaded_file is not None and analyze_button:
 else:
 
     ""
+
